@@ -1,9 +1,17 @@
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+
 const Header = () => {
   return (
-    <header className="bg-blue-500 text-white p-4">
-      <h2>My Recipe App</h2>
-      {/* Navigation or other elements can go here */}
-    </header>
+    <AppBar position="static">
+      <Toolbar>
+        <Typography variant="h6">
+          My Recipe App
+        </Typography>
+        {/* Add additional navigation items or buttons here */}
+      </Toolbar>
+    </AppBar>
   );
 };
 

@@ -1,8 +1,13 @@
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+
 const Footer = () => {
   return (
-    <footer className="bg-gray-200 text-center p-4">
-      <p>© 2024 Recipe Recommender</p>
-    </footer>
+    <Box component="footer" sx={{ bgcolor: 'background.paper', py: 3, mt: 'auto' }}>
+      <Typography variant="body2" color="text.secondary" align="center">
+        © 2024 Recipe Recommender
+      </Typography>
+    </Box>
   );
 };
 

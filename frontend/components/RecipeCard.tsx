@@ -1,12 +1,21 @@
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
+
 const RecipeCard = ({ recipe }) => {
-    return (
-      <div className="border rounded-lg p-4">
-        <h3 className="font-bold">{recipe.title}</h3>
-        <p>{recipe.description}</p>
+  return (
+    <Card sx={{ maxWidth: 345 }}>
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          {recipe.title}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          {recipe.description}
+        </Typography>
         {/* Add more recipe details */}
-      </div>
-    );
-  };
-  
-  export default RecipeCard;
-  
+      </CardContent>
+    </Card>
+  );
+};
+
+export default RecipeCard;
